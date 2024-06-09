@@ -1,4 +1,5 @@
 ﻿using SistemaGestion;
+using SistemaGestionBussiness;
 using SistemaGestionData;
 using SistemaGestionEntities;
 using System;
@@ -42,6 +43,7 @@ namespace SistemaGestionUI
             {
                 //ProductoData productoData = new ProductoData();
                 Producto txtProducto = ProductoData.GetProductByID(idProducto);
+                //Producto txtProducto = ProductoBussiness.GetProductoByID(idProducto);
 
                 txtDescripcion.Text = txtProducto.Descripciones;
                 txtCosto.Text = txtProducto.Costo.ToString();
@@ -65,7 +67,8 @@ namespace SistemaGestionUI
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string Id = txtId.Text;
-            ProductoData.DeleteProduct(int.Parse(Id));
+            //ProductoData.DeleteProduct(int.Parse(Id));
+            ProductoBussiness.DeleteProducto(int.Parse(Id));
             MessageBox.Show("Producto Borrado");
             limpiar();
             Program.form1.idProducto = 0;
@@ -86,12 +89,14 @@ namespace SistemaGestionUI
 
             if (idProducto > 0)
             {
-                ProductoData.UpdateProduct(idProducto, nuevoProducto);
+                //ProductoData.UpdateProduct(idProducto, nuevoProducto);
+                ProductoBussiness.UpdateProducto(idProducto, nuevoProducto);
                 MessageBox.Show("Producto Actualizado");
             }
             else
             {
-                ProductoData.CreateProduct(nuevoProducto);
+                //ProductoData.CreateProduct(nuevoProducto);
+                ProductoBussiness.CreateProducto(nuevoProducto);
                 MessageBox.Show("Producto Nuevo Creado");
             }
             limpiar();

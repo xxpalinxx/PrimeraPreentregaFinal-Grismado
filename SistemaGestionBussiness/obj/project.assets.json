@@ -510,11 +510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pablo\\source\\repos\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
+      "projectUniqueName": "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
       "projectName": "SistemaGestionBussiness",
-      "projectPath": "C:\\Users\\Pablo\\source\\repos\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
+      "projectPath": "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
       "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pablo\\source\\repos\\SistemaGestionBussiness\\obj\\",
+      "outputPath": "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionBussiness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -532,11 +532,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Pablo\\source\\repos\\SistemaGestionData\\SistemaGestionData.csproj": {
-              "projectPath": "C:\\Users\\Pablo\\source\\repos\\SistemaGestionData\\SistemaGestionData.csproj"
+            "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionData\\SistemaGestionData.csproj": {
+              "projectPath": "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionData\\SistemaGestionData.csproj"
             },
-            "C:\\Users\\Pablo\\source\\repos\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-              "projectPath": "C:\\Users\\Pablo\\source\\repos\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+            "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+              "projectPath": "G:\\Pablo\\CSharp\\PrimeraPreentregaFinal-Grismado\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
             }
           }
         }

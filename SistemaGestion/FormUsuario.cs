@@ -1,4 +1,5 @@
 ﻿using SistemaGestion;
+using SistemaGestionBussiness;
 using SistemaGestionData;
 using SistemaGestionEntities;
 using System;
@@ -34,7 +35,8 @@ namespace SistemaGestionUI
             if (idUsuario > 0)
             {
                 //ProductoData productoData = new ProductoData();
-                Usuario txtUsuario = UsuarioData.GetUserByID(idUsuario);
+                //Usuario txtUsuario = UsuarioData.GetUserByID(idUsuario);
+                Usuario txtUsuario = UsuarioBussiness.GetUsuarioByID(idUsuario);
 
                 txtNombre.Text = txtUsuario.Nombre;
                 txtApellido.Text = txtUsuario.Apellido;
@@ -64,7 +66,8 @@ namespace SistemaGestionUI
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string Id = txtId.Text;
-            UsuarioData.DeleteUser(int.Parse(Id));
+            //UsuarioData.DeleteUser(int.Parse(Id));
+            UsuarioBussiness.DeleteUsuario(int.Parse(Id));
             MessageBox.Show("Usuario Borrado");
             limpiar();
             Program.form1.idUsuario = 0;
@@ -85,12 +88,14 @@ namespace SistemaGestionUI
 
             if (idUsuario > 0)
             {
-                UsuarioData.UpdateUser(idUsuario, nuevoUsuario);
+                //UsuarioData.UpdateUser(idUsuario, nuevoUsuario);
+                UsuarioBussiness.UpdateUsuario(idUsuario, nuevoUsuario);
                 MessageBox.Show("Usuario Actualizado");
             }
             else
             {
-                UsuarioData.CreateUser(nuevoUsuario);
+                //UsuarioData.CreateUser(nuevoUsuario);
+                UsuarioBussiness.CreateUsuario(nuevoUsuario);
                 MessageBox.Show("Usuario Nuevo Creado");
             }
             limpiar();

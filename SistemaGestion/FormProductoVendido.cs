@@ -1,5 +1,6 @@
 ﻿using SistemaGestion;
 using SistemaGestionData;
+using SistemaGestionBussiness;
 using SistemaGestionEntities;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,8 @@ namespace SistemaGestionUI
             if (idProductoVendido > 0)
             {
                 //ProductoData productoData = new ProductoData();
-                ProductoVendido txtProductoVendido = ProductoVendidoData.GetProductoVendidoByID(idProductoVendido);
+                //ProductoVendido txtProductoVendido = ProductoVendidoData.GetProductoVendidoByID(idProductoVendido);
+                ProductoVendido txtProductoVendido = ProductoVendidoBussiness.GetProductoVendidoByID(idProductoVendido);
 
                 txtStock.Text = txtProductoVendido.Stock.ToString();
                 txtIdProducto.Text = txtProductoVendido.IdProducto.ToString();
@@ -58,7 +60,8 @@ namespace SistemaGestionUI
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string Id = txtId.Text;
-            ProductoVendidoData.DeleteProductoVendido(int.Parse(Id));
+            //ProductoVendidoData.DeleteProductoVendido(int.Parse(Id));
+            ProductoVendidoBussiness.DeleteProductoVendido(int.Parse(Id));
             MessageBox.Show("Producto Vendido Borrado");
             limpiar();
             Program.form1.idProductoVendido = 0;
@@ -77,12 +80,14 @@ namespace SistemaGestionUI
 
             if (idProductoVendido > 0)
             {
-                ProductoVendidoData.UpdateProductoVendido(idProductoVendido, nuevoProductoVendido);
+                //ProductoVendidoData.UpdateProductoVendido(idProductoVendido, nuevoProductoVendido);
+                ProductoVendidoBussiness.UpdateProductoVendido(idProductoVendido, nuevoProductoVendido);
                 MessageBox.Show("Producto Vendido Actualizado");
             }
             else
             {
-                ProductoVendidoData.CreateProductoVendido(nuevoProductoVendido);
+                //ProductoVendidoData.CreateProductoVendido(nuevoProductoVendido);
+                ProductoVendidoBussiness.CreateProductoVendido(nuevoProductoVendido);
                 MessageBox.Show("Producto Nuevo Creado");
             }
             limpiar();

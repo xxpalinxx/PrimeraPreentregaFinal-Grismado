@@ -9,3 +9,15 @@ C:\Users\Pablo\source\repos\SistemaGestionEntities\obj\Debug\net6.0\SistemaGesti
 C:\Users\Pablo\source\repos\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
 C:\Users\Pablo\source\repos\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
 C:\Users\Pablo\source\repos\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.deps.json
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.dll
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.pdb
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.GeneratedMSBuildEditorConfig.editorconfig
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfoInputs.cache
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfo.cs
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.csproj.CoreCompileInputs.cache
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.sourcelink.json
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.dll
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
+G:\Pablo\CSharp\PrimeraPreentregaFinal-Grismado\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll

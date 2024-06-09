@@ -15,5 +15,24 @@ namespace SistemaGestionBussiness
         {
             return UsuarioData.GetUsuario();
         }
+        public static bool DeleteUsuario(int Id)
+        {
+            return UsuarioData.DeleteUser(Id);
+        }
+
+        public static bool CreateUsuario(Usuario usuario)
+        {
+            return UsuarioData.CreateUser(usuario);
+        }
+
+        public static bool UpdateUsuario(int Id, Usuario usuario)
+        {
+            return UsuarioData.UpdateUser(Id, usuario);
+        }
+
+        public static Usuario GetUsuarioByID(int Id)
+        {
+            return UsuarioData.GetUserByID(Id);
+        }
     }
 }

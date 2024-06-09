@@ -1,4 +1,5 @@
 ﻿using SistemaGestion;
+using SistemaGestionBussiness;
 using SistemaGestionData;
 using SistemaGestionEntities;
 using System;
@@ -33,7 +34,8 @@ namespace SistemaGestionUI
             if (idVenta > 0)
             {
                 //ProductoData productoData = new ProductoData();
-                Venta txtVenta = VentaData.GetVentaByID(idVenta);
+                //Venta txtVenta = VentaData.GetVentaByID(idVenta);
+                Venta txtVenta = VentaBussiness.GetVentaByID(idVenta);
 
                 txtComentario.Text = txtVenta.Comentarios;
                 txtIdUsuario.Text = txtVenta.IdUsuario.ToString();
@@ -57,7 +59,8 @@ namespace SistemaGestionUI
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string Id = txtId.Text;
-            VentaData.DeleteVenta(int.Parse(Id));
+            //VentaData.DeleteVenta(int.Parse(Id));
+            VentaBussiness.DeleteVenta(int.Parse(Id));
             MessageBox.Show("Venta Borrado");
             limpiar();
             Program.form1.idVenta = 0;
@@ -75,12 +78,14 @@ namespace SistemaGestionUI
 
             if (idVenta > 0)
             {
-                VentaData.UpdateVenta(idVenta, nuevaVenta);
+                //VentaData.UpdateVenta(idVenta, nuevaVenta);
+                VentaBussiness.UpdateVenta(idVenta, nuevaVenta);
                 MessageBox.Show("Venta Actualizado");
             }
             else
             {
-                VentaData.CreateVenta(nuevaVenta);
+                //VentaData.CreateVenta(nuevaVenta);
+                VentaBussiness.CreateVenta(nuevaVenta);
                 MessageBox.Show("Venta Nueva Creado");
             }
             limpiar();

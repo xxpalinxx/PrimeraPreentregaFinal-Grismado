@@ -16,12 +16,24 @@ namespace SistemaGestionBussiness
             return ProductoData.GetProducto();
         }
         
-        //public static void DeleteProducto(int Id)
-        //{
-        //    ProductoData.DeleteProduct(Id);
-        //}
+        public static bool DeleteProducto(int Id)
+        {
+            return ProductoData.DeleteProduct(Id);
+        }
 
-        
-        
+        public static bool CreateProducto(Producto producto)
+        {
+            return ProductoData.CreateProduct(producto);
+        }
+
+        public static bool UpdateProducto(int Id, Producto producto)
+        {
+            return ProductoData.UpdateProduct(Id, producto);
+        }
+
+        public static Producto GetProductoByID(int Id)
+        {
+            return ProductoData.GetProductByID(Id);
+        } 
     }
 }
