@@ -69,7 +69,7 @@ namespace SistemaGestionData
                 throw new Exception("Id no encontrado");
             }
         }
-        public static bool UpdateProduct(int id, Producto producto)
+        public static bool UpdateProduct(Producto producto)
         {
             string connectionString = "Server=.;Database=SistemaGestion;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -82,7 +82,7 @@ namespace SistemaGestionData
                 command.Parameters.AddWithValue("@PrecioVenta", producto.PrecioVenta);
                 command.Parameters.AddWithValue("@Stock", producto.Stock);
                 command.Parameters.AddWithValue("@IdUsuario", producto.IdUsuario);
-                command.Parameters.AddWithValue("@id", id);                
+                command.Parameters.AddWithValue("@id", producto.Id);                
                 return command.ExecuteNonQuery() > 0;
             }
         }

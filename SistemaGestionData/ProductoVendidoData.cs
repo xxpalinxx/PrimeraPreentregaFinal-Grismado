@@ -67,7 +67,7 @@ namespace SistemaGestionData
             }
         }
 
-        public static bool UpdateProductoVendido(int id, ProductoVendido productoVendido)
+        public static bool UpdateProductoVendido(ProductoVendido productoVendido)
         {
             string connectionString = "Server=.;Database=SistemaGestion;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -77,7 +77,7 @@ namespace SistemaGestionData
                 command.Parameters.AddWithValue("@Stock", productoVendido.Stock);
                 command.Parameters.AddWithValue("@IdProducto", productoVendido.IdProducto);
                 command.Parameters.AddWithValue("@IdVenta", productoVendido.IdVenta);
-                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@id", productoVendido.Id);
                 connection.Open();
                 return command.ExecuteNonQuery() > 0;
             }

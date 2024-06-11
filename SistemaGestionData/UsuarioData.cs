@@ -72,7 +72,7 @@ namespace SistemaGestionData
             }
         }
 
-        public static bool UpdateUser(int id, Usuario usuario)
+        public static bool UpdateUser(Usuario usuario)
         {
             string connectionString = "Server=.;Database=SistemaGestion;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -84,7 +84,7 @@ namespace SistemaGestionData
                 command.Parameters.AddWithValue("@nombreUsuario", usuario.NombreUsuario);
                 command.Parameters.AddWithValue("@contraseña", usuario.Contraseña);
                 command.Parameters.AddWithValue("@mail", usuario.Mail);
-                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@id", usuario.Id);
                 connection.Open();
                 return command.ExecuteNonQuery() > 0;
             }

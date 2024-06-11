@@ -25,9 +25,9 @@ namespace SistemaGestionBussiness
             return ProductoVendidoData.CreateProductoVendido(productoVendido);
         }
 
-        public static bool UpdateProductoVendido(int Id, ProductoVendido productoVendido)
+        public static bool UpdateProductoVendido(ProductoVendido productoVendido)
         {
-            return ProductoVendidoData.UpdateProductoVendido(Id, productoVendido);
+            return ProductoVendidoData.UpdateProductoVendido(productoVendido);
         }
 
         public static ProductoVendido GetProductoVendidoByID(int Id)
