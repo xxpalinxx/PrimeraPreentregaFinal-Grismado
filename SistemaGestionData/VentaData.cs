@@ -66,7 +66,7 @@ namespace SistemaGestionData
             }
         }
 
-        public static bool UpdateVenta(int id, Venta venta)
+        public static bool UpdateVenta(Venta venta)
         {
             string connectionString = "Server=.;Database=SistemaGestion;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -75,7 +75,7 @@ namespace SistemaGestionData
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Comentarios", venta.Comentarios);
                 command.Parameters.AddWithValue("@IdUsuario", venta.IdUsuario);
-                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@id", venta.Id);
                 connection.Open();
                 return command.ExecuteNonQuery() > 0;
             }

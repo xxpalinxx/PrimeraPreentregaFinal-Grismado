@@ -25,9 +25,9 @@ namespace SistemaGestionBussiness
             return VentaData.CreateVenta(venta);
         }
 
-        public static bool UpdateVenta(int Id, Venta venta)
+        public static bool UpdateVenta(Venta venta)
         {
-            return VentaData.UpdateVenta(Id, venta);
+            return VentaData.UpdateVenta(venta);
         }
 
         public static Venta GetVentaByID(int Id)

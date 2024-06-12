@@ -25,9 +25,9 @@ namespace SistemaGestionBussiness
             return UsuarioData.CreateUser(usuario);
         }
 
-        public static bool UpdateUsuario(int Id, Usuario usuario)
+        public static bool UpdateUsuario(Usuario usuario)
         {
-            return UsuarioData.UpdateUser(Id, usuario);
+            return UsuarioData.UpdateUser(usuario);
         }
 
         public static Usuario GetUsuarioByID(int Id)
